@@ -96,7 +96,7 @@ export const Contact = () => {
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
+                <div className="flex flex-col items-start">
                   <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
                     Your Name
                   </label>
@@ -108,10 +108,10 @@ export const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     className="w-full bg-background border-border focus:border-primary"
-                    placeholder="John Doe"
+                    placeholder="Abebe Tesfaye"
                   />
                 </div>
-                <div>
+                <div className="flex flex-col items-start">
                   <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
                     Email Address
                   </label>
@@ -123,12 +123,12 @@ export const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     className="w-full bg-background border-border focus:border-primary"
-                    placeholder="john@example.com"
+                    placeholder="abebe@example.com"
                   />
                 </div>
               </div>
 
-              <div>
+              <div className="flex flex-col items-start">
                 <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
                   Subject
                 </label>
@@ -144,7 +144,7 @@ export const Contact = () => {
                 />
               </div>
 
-              <div>
+              <div className="flex flex-col items-start">
                 <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
                   Message
                 </label>

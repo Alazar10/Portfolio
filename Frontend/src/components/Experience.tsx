@@ -51,16 +51,24 @@ export const Experience = () => {
                     "Building REST APIs for enterprise-level solutions",
                     "Collaborating with cross-functional teams to deliver scalable products",
                   ].map((desc, idx) => (
-                    <div key={idx} className="flex items-start space-x-3">
-                      <CheckCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                      <p className="text-foreground/90">{desc}</p>
+                    <div key={idx} className="flex items-start gap-3">
+                      <div className="pt-1">
+                        <CheckCircle className="w-5 h-5 text-primary flex-shrink-0" />
+                      </div>
+                      <p className="text-foreground/90 leading-snug">{desc}</p>
                     </div>
                   ))}
                 </div>
 
                 {/* Tech Stack */}
                 <div className="mt-6 flex flex-wrap gap-2">
-                  {["Node.js", "Express.js", "MongoDB", "REST APIs", "Team Collaboration"].map((tech) => (
+                  {[
+                    "Node.js",
+                    "Express.js",
+                    "MongoDB",
+                    "REST APIs",
+                    "Team Collaboration",
+                  ].map((tech) => (
                     <span
                       key={tech}
                       className="px-3 py-1 text-xs font-medium bg-primary/10 text-primary border border-primary/20 rounded-full"
@@ -86,7 +94,9 @@ export const Experience = () => {
               { value: "24/7", label: "System Reliability" },
             ].map(({ value, label }) => (
               <div key={label} className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">{value}</div>
+                <div className="text-3xl font-bold text-primary mb-2">
+                  {value}
+                </div>
                 <p className="text-sm text-muted-foreground">{label}</p>
               </div>
             ))}
