@@ -43,7 +43,7 @@ const Index = () => {
       </nav>
 
       {/* Main Content */}
-      <main className="pt-20 sm:pt-24">
+      <main className="pt-2 sm:pt-24">
         <Hero />
         <About />
         <Skills />

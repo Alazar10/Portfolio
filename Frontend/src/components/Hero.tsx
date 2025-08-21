@@ -6,7 +6,7 @@ export const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center px-6 py-5">
       <div className="max-w-4xl mx-auto text-center animate-fade-in">
-        <div className="mb-6">
+        <div className="mb-2">
           <h1 className="text-5xl md:text-7xl font-bold mb-4 text-gradient">
             Alazar Girmachew
           </h1>
