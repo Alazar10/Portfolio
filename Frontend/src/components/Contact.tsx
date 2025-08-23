@@ -108,7 +108,7 @@ export const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     className="w-full bg-background border-border focus:border-primary"
-                    placeholder="Abebe Tesfaye"
+                    placeholder="Full Name"
                   />
                 </div>
                 <div className="flex flex-col items-start">
@@ -123,7 +123,7 @@ export const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     className="w-full bg-background border-border focus:border-primary"
-                    placeholder="abebe@example.com"
+                    placeholder="yourname@example.com"
                   />
                 </div>
               </div>
